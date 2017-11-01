@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+      </div>
+
+      <h1 class="heading-large">
+        Where was your bike stolen from?
+      </h1>
+
+      <label class="form-label" for="textarea">
+        Enter Location
+        <span class="form-hint">
+          For example, 'William Prance Road, Plymouth, HM Land Registry bike rack'.
+      </label>
+
+      <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="3"></textarea>
+
+      <p>Or, <a href="03a.html">select<span class="visuallyhidden"> bike location</span> on a map</a>
+
+
+    </div>
+  </div>
+
+      <br>
+      <form action="04.html">
+      <input class="button" type="submit" value="Continue">
+      </form>
+      </br>
+
+
+</main>
+
+{% endblock %}

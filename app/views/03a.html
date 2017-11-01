@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+      </div>
+
+      <h1 class="heading-large">
+        Select map location</h1>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5084.993908021161!2d-4.124159!3d50.413212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc6362e13a260a02!2sHM+Land+Registry+-+Plymouth+Office!5e0!3m2!1sen!2sus!4v1508942425219" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <form action="04.html">
+  <input class="button" type="submit" value="Continue">
+</main>
+
+{% endblock %}

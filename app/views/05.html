@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+      </div>
+
+      <h1 class="heading-large">
+        Contact information</h1>
+
+
+        <details>
+
+        <summary><span class="summary">Why do we need this?</span></summary>
+
+        <div class="panel panel-border-narrow">
+
+        <p>
+        We need to know your name and contact information, so that we can send your police reference number to you.
+        </p>
+
+        <p>
+        We will hold your personal information on our systems for as long as you use the service you have requested,
+        and remove it in the event that the purpose has been met.
+       </p>
+
+        </div>
+
+        </details>
+
+
+
+        <!-- Use .form-group to create spacing when wrapping label and input pairs -->
+          <div class="form-group">
+              <label class="form-label" for="first-name-2">First name </label>
+              <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+          </div>
+          <div class="form-group">
+              <label class="form-label" for="last-name-2">Last name</label>
+              <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+          </div>
+
+
+        <form>
+<div class="form-group">
+  <fieldset>
+
+      <h2 class="heading-medium" style="margin-top: 0.5em;"> How do you wish to be contacted?</h2>
+
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-contact-by-email">Email</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+              <label class="form-label" for="contact-email">Email address</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-phone">Phone</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+              <label class="form-label" for="contact-phone">Phone number</label>
+              <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-text">
+              <input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-text">Text message</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+              <label class="form-label" for="contact-text-message">Mobile phone number</label>
+              <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+            </div>
+
+            </fieldset>
+            </div>
+            </form>
+
+
+    </div>
+  </div>
+
+   <!-- <b></br> -->
+  <form action="06.html">
+  <input class="button" type="submit" value="Continue">
+
+</main>
+
+{% endblock %}

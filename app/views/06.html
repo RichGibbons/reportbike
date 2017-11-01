@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+      </div>
+
+      <h1 class="heading-large">
+        Summary
+      </h1>
+
+
+      <div class="panel panel-border-wide">
+          <p>
+           You are about to submit this information to your local police department,
+           please make sure the following details are correct.
+          </p>
+      </div>
+
+      <!-- <br></br> -->
+     <!-- <div class="form-group"> -->
+      <table>
+        <caption class="heading-small">Personal information</caption>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>Richard Gibbons</td>
+            </tr>
+                <tr>
+                  <td>Contact</td>
+                  <td>07946015379</td>
+                </tr>
+                    <tr>
+                      <td>Bike</td>
+                      <td>Carrera Hellcat mountain bike (Black)</td>
+                    </tr>
+                         <tr>
+                           <td>Original cost</td>
+                           <td>£650.00</td>
+                         </tr>
+                              <tr>
+                                <td>Last known location</td>
+                                <td>William Prance Road, HM Land Registry bike rack </td>
+                              </tr>
+          </tbody>
+      </table>
+    </div>
+
+
+    </div>
+  </div>
+
+
+  <br></br>
+  <form action="07.html">
+  <input class="button" type="submit" value="Submit">
+
+</main>
+
+{% endblock %}

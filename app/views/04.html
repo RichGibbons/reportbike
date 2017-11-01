@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="phase-banner">
+      <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+      </div>
+
+      <h1 class="heading-large">
+        When did you last see your bike?</h1>
+
+        <div class="form-group">
+            <fieldset>
+                <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="Yes">
+                <label for="radio-1">Within the last hour</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="Yes">
+                <label for="radio-2">Within the last day</label>
+              </div>
+              <p class="form-block">or</p>
+
+              <div class="multiple-choice" data-target="radio-3">
+        <input id="example-contact-by-text" type="radio" name="radio-group" value="No">
+        <label for="radio-3">Some other time</label>
+            </div>
+                  <div class="panel panel-border-narrow js-hidden" id="radio-3">
+        <label class="form-label" for="radio-3">Enter date dd/mm/yyyy</label>
+        <input class="form-control" name="contact-text-message" type="text" id="radio-3">
+                  </div>
+
+
+         </div>
+        </fieldset>
+
+    </div>
+  </div>
+
+  <form action="05.html">
+  <input class="button" type="submit" value="Continue">
+
+</main>
+
+{% endblock %}
